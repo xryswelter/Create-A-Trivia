@@ -20,12 +20,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header>
-          Welcome!
-        </Header>
-        <Content>
-          Mern boilerplate with react-emotion
-        </Content>
+        <Container>
+          <Header/>
+          <Nav/>
+          <div class = "content">
+          <Route exact path={
+            // SetUp Routes
+          } component={Profile} />
+
+          </div>
+          <Footer/>
+        </Container>
       </div>
     );
   }
